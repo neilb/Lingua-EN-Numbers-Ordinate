@@ -1,24 +1,16 @@
-# This -*- perl -*- script writes the Makefile for Lingua::EN::Numbers::Ordinate
-# Time-stamp: "2000-08-24 17:14:02 MDT"
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+# This -*-perl-*- script writes the Makefile for installing this distribution.
+#
+# See "perldoc perlmodinstall" or "perldoc ExtUtils::MakeMaker" for
+# info on how to control how the installation goes.
+#
+#                                       Time-stamp: "2004-12-29 20:19:53 AST"
+
 require 5.004;
 use strict;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
     'NAME'	=> 'Lingua::EN::Numbers::Ordinate',
-    'VERSION_FROM' => 'Ordinate.pm', # finds $VERSION
-    'dist'        => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    'VERSION_FROM' => 'lib/Lingua/EN/Numbers/Ordinate.pm', # finds $VERSION
+    'dist'        => { COMPRESS => 'gzip -6f', SUFFIX => 'gz', },
 );
-
-package MY;
-
-sub libscan
-{ # Determine things that should *not* be installed
-    my($self, $path) = @_;
-    return '' if $path =~ m/~/;
-    $path;
-}
-
-__END__

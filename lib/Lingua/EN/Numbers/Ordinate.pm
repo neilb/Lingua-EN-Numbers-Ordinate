@@ -2,13 +2,13 @@
 require 5;
 package Lingua::EN::Numbers::Ordinate;
 use strict;
-# Time-stamp: "2000-08-24 16:45:48 MDT"
+# Time-stamp: "2004-12-29 19:06:20 AST"
 use vars qw(@ISA @EXPORT @EXPORT_OK $VERSION);
 require Exporter;
 @ISA = ('Exporter');
 @EXPORT = ('ordinate');
 @EXPORT_OK = ('ordsuf', 'th');
-$VERSION = "0.01";
+$VERSION = "1.02";
 
 ###########################################################################
 
