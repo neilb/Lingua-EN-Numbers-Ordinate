@@ -1,0 +1,12 @@
+Revision history for Perl module Lingua::EN::Numbers::Ordinate
+
+1.01_01 2014-05-17 NEILB
+    - Renamed this file from ChangeLog to Changes,
+      reformatted as per CPAN::Changes::Spec
+
+1.02 2004-12-30 SBURKE
+    - No code changes, just rebundling
+	
+0.01 2000-08-25 SBURKE
+	- First release to CPAN
+
