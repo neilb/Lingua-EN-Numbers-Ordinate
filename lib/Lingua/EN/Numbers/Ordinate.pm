@@ -1,12 +1,15 @@
 package Lingua::EN::Numbers::Ordinate;
 
+# ABSTRACT: go from cardinal number (3) to ordinal ("3rd")
+
+use 5.006;
 use strict;
-# Time-stamp: "2004-12-29 19:06:20 AST"
-use vars qw(@ISA @EXPORT @EXPORT_OK $VERSION);
+use warnings;
 require Exporter;
-@ISA = ('Exporter');
-@EXPORT = ('ordinate');
-@EXPORT_OK = ('ordsuf', 'th');
+
+our @ISA        = qw/ Exporter  /;
+our @EXPORT     = qw/ ordinate  /;
+our @EXPORT_OK  = qw/ ordsuf th /;
 
 ###########################################################################
 
@@ -169,6 +172,7 @@ sub ordinate ($) {
   return $i . ordsuf($i);
 }
 
+no warnings 'all';
 *th = \&ordinate; # correctly copies the prototype, too.
 
 ###########################################################################

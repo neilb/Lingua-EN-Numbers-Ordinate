@@ -1,11 +1,13 @@
+#! perl
 
-require 5;
+use 5.006;
+use strict;
+use warnings;
+
 # Time-stamp: "2004-12-29 20:54:50 AST"
 # Summary of, well, things.
 
-use Test;
-BEGIN {plan tests => 2};
-ok 1;
+use Test::More 0.88 tests => 1;
 
 use Lingua::EN::Numbers::Ordinate ();
 
@@ -38,6 +40,7 @@ use Lingua::EN::Numbers::Ordinate ();
 
     #print "Peeking at $this => ${$this . '::VERSION'}\n";
     
+    no strict 'refs';
     if(defined ${$this . '::VERSION'} ) {
       $v{$this} = ${$this . '::VERSION'}
     } elsif(
@@ -59,7 +62,7 @@ use Lingua::EN::Numbers::Ordinate ();
   push @out, " Modules in memory:\n";
   delete @v{'', '[none]'};
   foreach my $p (sort {lc($a) cmp lc($b)} keys %v) {
-    $indent = ' ' x (2 + ($p =~ tr/:/:/));
+    my $indent = ' ' x (2 + ($p =~ tr/:/:/));
     push @out,  '  ', $indent, $p, defined($v{$p}) ? " v$v{$p};\n" : ";\n";
   }
   push @out, sprintf "[at %s (local) / %s (GMT)]\n",
