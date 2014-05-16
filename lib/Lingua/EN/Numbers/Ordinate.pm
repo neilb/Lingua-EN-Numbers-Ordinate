@@ -134,6 +134,14 @@ Damian Conway's I<Object Oriented Perl> from Manning Press.
 
 Kinda makes you like C<th(3)>, doesn't it?
 
+=head1 SEE ALSO
+
+L<Lingua::EN::Inflect> provides an C<ORD> function,
+which returns the ordinal form of a cardinal number.
+
+L<Lingua::EN::Number::IsOrdinal> provides an C<is_ordinal>
+function, which returns true if passed an ordinal number.
+
 =head1 REPOSITORY
 
 L<https://github.com/neilbowers/Lingua-EN-Numbers-Ordinate>
