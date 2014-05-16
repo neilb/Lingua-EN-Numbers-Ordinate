@@ -2,6 +2,7 @@ Revision history for Perl module Lingua::EN::Numbers::Ordinate
 
 1.01_01 2014-05-17 NEILB
     - Switched to Dist::Zilla
+    - Added github repo to pod
     - Renamed this file from ChangeLog to Changes,
       reformatted as per CPAN::Changes::Spec
 

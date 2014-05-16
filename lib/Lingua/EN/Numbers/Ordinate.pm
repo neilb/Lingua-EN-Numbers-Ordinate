@@ -131,6 +131,10 @@ Damian Conway's I<Object Oriented Perl> from Manning Press.
 
 Kinda makes you like C<th(3)>, doesn't it?
 
+=head1 REPOSITORY
+
+L<https://github.com/neilbowers/Lingua-EN-Numbers-Ordinate>
+
 =head1 COPYRIGHT
 
 Copyright (c) 2000 Sean M. Burke.  All rights reserved.
