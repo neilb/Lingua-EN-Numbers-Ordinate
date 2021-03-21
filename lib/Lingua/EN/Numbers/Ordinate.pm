@@ -144,7 +144,7 @@ function, which returns true if passed an ordinal number.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Lingua-EN-Numbers-Ordinate>
+L<https://github.com/neilb/Lingua-EN-Numbers-Ordinate>
 
 =head1 COPYRIGHT
 
@@ -162,10 +162,10 @@ Sean M. Burke C<sburke@cpan.org>
 ###########################################################################
 
 sub ordsuf ($) {
-  return 'th' if not(defined($_[0])) or not( 0 + $_[0] );
+  return 'th' if not(defined($_[0])) or $_[0] !~ /^-?[0-9]+$/;
    # 'th' for undef, 0, or anything non-number.
   my $n = abs($_[0]);  # Throw away the sign.
-  return 'th' unless $n == int($n); # Best possible, I guess.
+
   $n %= 100;
   return 'th' if $n == 11 or $n == 12 or $n == 13;
   $n %= 10;

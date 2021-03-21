@@ -1,5 +1,13 @@
 Revision history for Perl module Lingua::EN::Numbers::Ordinate
 
+1.04_01 2021-03-21 NEILB
+    - Extended tests to give full coverage, which prompted:
+    - Refactored logic in ordsuf(), which resolves a warning.
+      It says it will take cardinals, but then the doc also
+      says that if you send nonsense, you'll get back "th"
+      as the suffix. So maintained that behaviour.
+    - Fixed repo URL to reflect my changed github username
+
 1.04 2015-07-04 NEILB
     - Added [MetaJSON] to dist.ini, so release will include META.json.
       RT#105628 from ETHER++
