@@ -43,5 +43,5 @@ foreach my $test (@TESTS) {
     is($ordinal, $expected_ordinal, 'th('.(defined($value) ? $value : 'undef').')');
 
     my $ord_suf = ordsuf($value);
-    is($ord_suf, $expected_ord_suf, "ordsuf(".($value // 'undef').") should be $expected_ord_suf");
+    is($ord_suf, $expected_ord_suf, "ordsuf(".(defined($value) ? $value : 'undef').") should be $expected_ord_suf");
 }
