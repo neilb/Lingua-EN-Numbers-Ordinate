@@ -142,6 +142,10 @@ which returns the ordinal form of a cardinal number.
 L<Lingua::EN::Number::IsOrdinal> provides an C<is_ordinal>
 function, which returns true if passed an ordinal number.
 
+L<Lingua::EN::Numbers> provides function C<num2en_ordinal()>
+which will take a number and return the ordinal as a word.
+So 3 will result in "third".
+
 =head1 REPOSITORY
 
 L<https://github.com/neilb/Lingua-EN-Numbers-Ordinate>
@@ -156,6 +160,9 @@ modify it under the same terms as Perl itself.
 =head1 AUTHOR
 
 Sean M. Burke C<sburke@cpan.org>
+
+This has been maintained by Neil Bowers (NEILB)
+since 2014.
 
 =cut
 

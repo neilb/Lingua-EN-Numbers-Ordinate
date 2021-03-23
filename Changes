@@ -4,6 +4,8 @@ Revision history for Perl module Lingua::EN::Numbers::Ordinate
     - Improved test coverage
     - Tweaked code to not warn on documented behaviour
     - Fixed github repo URL
+    - Added mention of Lingua::EN::Numbers's num2en_ordinal
+      in SEE ALSO.
 
 1.04_02 2021-03-22 NEILB
     - Sigh. I used // in the changes I made to tests,
